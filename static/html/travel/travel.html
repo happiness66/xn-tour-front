@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>全域旅游</title>
+</head>
+
+<body class="bg_f3f3f3">
+    <div id="top-nav" class="go-top clearfix">
+        <div class="wp33 go-top-li active J_Content0">旅游<div class="center-x-active"></div></div>
+        <div class="wp33 go-top-li J_Content1">酒店<div class="center-x-active"></div></div>
+        <div class="wp33 go-top-li J_Content2">美食<div class="center-x-active"></div></div>
+    </div>
+    <div class="travel-fixed-sx-wrap" id="sxIcon"><div class="travel-sx-icon"></div></div>
+	<div id="wrapper" class="travel-wrapper">
+        <div id="scroll">
+        	<div id="pullDown" class="idle">
+                <div class="pullDownLabel">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                    <div class="bounce4"></div>
+                </div>
+            </div>
+            <div id="top-content" class="top-content">
+                <ul class="top-nav clearfix J_Content0 active hp165p"></ul>
+                <ul class="top-nav clearfix J_Content1 hp165p"></ul>
+                <ul class="top-nav clearfix J_Content2 hp165p"></ul>
+            </div>
+            <div id="content" class="content">
+                <div class="jcont J_Content0 active"></div>
+                <div class="jcont J_Content1"></div>
+                <div class="jcont J_Content2"></div>
+            </div>
+            <div id="pullUp" class="idle">
+                <div class="pullUpLabel">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                    <div class="bounce4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="travel-sx-wrap" id="travelWrap">
+        <div class="travel-sx-cont" id="travelCont">
+            <header class="travel-sx-top">
+                <input type="button" class="fl" value="取消" id="cancel">
+                <input type="button" class="fr" value="确定" id="ok">
+            </header>
+            <div class="travel-drop">
+                <div class="travel-drop-item p_r" id="dropCont">
+                    <div class="travel-drop-left" id="dropLeft">
+                        <div class="travel-drop-item-left active">地域</div>
+                        <div class="travel-drop-item-left">类别</div>
+                        <div class="travel-drop-item-left">时间</div>
+                        <div class="travel-drop-item-left">形式</div>
+                    </div>
+                    <div class="innerWrap" id="innerWrap">
+                        <div class="innerScroll" id="dropRight"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="import" href="../footer.html?__inline">
+    <script src="//api.map.baidu.com/api?v=2.0&ak=GtNrG008U04GONzKSDHiW70GxurUUhlU&s=1"></script>
+    <script data-loader>
+        require(['app/controller/travel/Travel']);
+    </script>
+</body>
+
+</html>

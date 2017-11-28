@@ -1,0 +1,18 @@
+{{#each items}}
+	<div class="item">
+		<a class="wp100 hp100" href="../user/strategy-detail.html?code={{code}}">
+		    <div class="item-c-div item-l">
+		        <img class="center-img" src="{{formatImage pic}}">
+		    </div>
+		    <div class="item-c">
+		        <div class="item-c-top1 pb2_i c_00 t_norwrap">{{title}}</div>
+		        <div class="item-c-center twoline-ellipsis f12_80">{{clearTag description}}</div>
+		        <div class="travel-item-bottom">{{formateDate updateDatetime}}</div>
+		        <div class="travel-gl-collection-wrap">
+		        	<div class="travel-gl-collection-icon"></div>
+		        	<span class="travel-gl-collection-times">{{collectionTimes}}</span>
+		        </div>
+		    </div>
+		</a>
+	</div>
+{{/each}}

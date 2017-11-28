@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>详情</title>
+</head>
+
+<body class="bg_f3f3f3">
+    <div class="swiper-container wp100 top-banner" id="swiper">
+        <div class="swiper-wrapper">
+        </div>
+    </div>
+    <div class="chose-date-wrap">
+        <div class="chose-date">
+            <div class="chose-date-item">
+                <input id="choseStartDate" type="button" class="spec-top-date"/>
+                <span class="chose-hotel-tip">入住时间</span>
+                <span class="chose-date-time" id="startSpan"></span>
+                <input id="startDate" type="hidden" />
+            </div>
+            <div class="chose-date-item">
+                <input id="choseEndDate" type="button" class="spec-top-date1"/>
+                <span class="chose-hotel-tip">离开时间</span>
+                <span class="chose-date-time" id="endSpan"></span>
+                <input id="endDate" type="hidden" />
+            </div>
+            <div class="total-days">共<span id="totalDays">0</span>晚</div>
+        </div>
+    </div>
+    <div id="wrapper" class="room-wrapper">
+        <div id="scroll">
+            <div id="content" class="bg_fff cr-content"></div>
+            <div id="pullUp" class="idle">
+                <div class="pullUpLabel">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                    <div class="bounce4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fix-b1">
+        <div id="kefuIcon" class="kefu-icon"></div>
+        <div class="croom-buy"><input type="button" class="croom-buy-btn" id="buyBtn" value="立即购买"></div>
+    </div>
+    <link rel="import" href="../footer.html?__inline">
+    <script src="../../js/lib/laydate/laydate.dev.js"></script>
+    <script data-loader>
+        require(['app/controller/go/ChoseRoom']);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>我的游记</title>
+</head>
+
+<body class="bg_f3f3f3">
+    <div id="wrapper" class="full-scroll-wrapper">
+        <div id="scroll">
+            <div class="wp100 plr10 ptb8 ba fs15 inline_block va black" id="name"></div>
+            <div class=" wp100 plr10 ba co9 fs12 pb8" id="description"></div>
+            <div class="plr10 pb10 ba bb clearfix" id="showImgContainer"></div>
+
+            <div class="ba  plr10 wp100 pt10" >
+            	<div class="travel-note-detail-3" id="scIcon">
+                	<div class="travel-note-detail-3-img-wrap travel-note-detail-3-shouc"></div>
+                    <div class="fs11 co9">收藏</div>
+            	</div>
+                <div class="travel-note-detail-3" id="dzIcon">
+                    <div class="travel-note-detail-3-img-wrap travel-note-detail-3-dianz"></div>
+                    <div class="fs11 co9">点赞</div>
+            	</div>
+                <div class="travel-note-detail-3" style="display: none;" id="delIcon">
+                    <div class="travel-note-detail-3-img-wrap travel-note-detail-3-del"></div>
+                    <div class="fs11 co9">删除</div>
+                </div>
+                <!-- <div class="travel-note-detail-3" id="jbIcon">
+                    <div class="travel-note-detail-3-img-wrap travel-note-detail-3-jubao"></div>
+                    <div class="fs11 co9">举报</div>
+            	</div> -->
+            </div>
+            <div class="wp100 plr10 ba co9 fs12 ptb10 bb" id="publishDatetime"></div>
+
+            <div class="hotel-pl-title">
+                <div class="hpt-l">游客评论</div><div class="hpt-r" id="writePlIcon">写评论</div>
+            </div>
+    
+            <div id="content" class="bg_fff"></div>
+            <div id="pullUp" class="idle">
+                <div class="pullUpLabel">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                    <div class="bounce4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="import" href="../footer.html?__inline">
+    <script data-loader>
+        require(['app/controller/user/TravelNoteDetail']);
+    </script>
+</body>
+
+</html>

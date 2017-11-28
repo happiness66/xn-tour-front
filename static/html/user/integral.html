@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>账户流水</title>
+</head>
+
+<body class="bc">
+
+	<div class=" fs14 ba  lh50 wp100 plr10 point" id="balance"></div>
+	
+	<div class="wp100 fs16 integral-scroll-wrapper" id="wrapper">
+		<div id="scroll">
+			<div id="pullDown" class="idle">
+                <div class="pullDownLabel">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div> 
+                    <div class="bounce4"></div> 
+                </div>
+            </div>
+            <div class="integralWrap" id="integralWrap">
+				
+			</div>
+			<div id="pullUp" class="idle" style="display: block;">
+                <div class="pullUpLabel">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                    <div class="bounce4"></div>
+                </div>
+            </div>
+		</div>
+	</div>
+    <link rel="import" href="../footer.html?__inline">
+    <script data-loader>
+        require(['app/controller/user/Integral']);
+    </script>
+</body>
+
+</html>

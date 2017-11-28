@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>我的购物车</title>
+</head>
+
+<body class="bg_f5">
+    <div class="hidden ptb60" id="noItem">
+        <div class="cartImg">
+            <img class="cartImg-img" src="../../images/cart-img.png?__inline" />
+            <div class="cartImg-after"></div>
+        </div>
+        <div class="tc lh18em pt14">
+            <h1 class="fs16">购物车快饿瘪了T.T</h1>
+            <p class="t_999 fs14">主人快给我挑点宝贝吧</p>
+            <p class="pt6 fs14"><a href="./mall-list.html" class="cart-shop">去逛逛</a></p>
+        </div>
+    </div>
+    <div class="hidden ptb60" id="noLogin">
+        <div class="cartImg">
+            <img class="cartImg-img" src="../../images/cart-img.png?__inline" />
+            <div class="cartImg-after"></div>
+        </div>
+        <div class="tc lh18em pt14">
+            <!-- <h1 class="fs16">购物车快饿瘪了T.T</h1> -->
+            <p class="t_999 fs14">登录帐号才能看到购物车哦</p>
+            <p class="pt6 fs14" id="goLogin"><a href="javascript:void(0)" class="cart-shop">马上登录</a></p>
+        </div>
+    </div>
+    <!-- hcont -->
+    <div class="hcont" id="od-ul"></div>
+
+    <div class="hp50"></div>
+    <div class="fs14 ba plr10 wp100 border fixft hig50 xxx" id="cart-bottom">
+        <div class="inline_block va cart-check-btn" id="allChecked"></div>
+        <div class="inline_block va">
+            <span class="c_30 fs14 pr10">全选</span>
+            <span class="fs14 co9">合计:</span>
+            <span class="price fs16" id="totalAmount"></span><span class="normal_ffa800">积分</span>
+        </div>
+        <input type="button" id="sbtn" value="结算" class="release fs15 inline_block fr">
+    </div>
+    <link rel="import" href="../footer.html?__inline">
+    <script>
+        require(['app/controller/mall/Cart']);
+    </script>
+</body>
+
+</html>

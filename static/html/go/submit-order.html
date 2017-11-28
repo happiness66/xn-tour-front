@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>确认房间信息</title>
+</head>
+
+<body class="bg_f3f3f3">
+    <div class="bg_fff">
+        <div class="submit-item">
+            酒店名称
+            <div class="submit-item-cont">
+                <span class="pl8 font-33 t_norwrap inline_block" id="name"></span>
+            </div>
+        </div>
+        <div class="submit-item">
+            酒店地址
+            <div class="submit-item-cont pr40_i" id="addr-wrap">
+                <span class="pl8 font-33 t_norwrap inline_block" id="addr"></span>
+            </div>
+            <div class="submit-item-arrow"></div>
+        </div>
+    </div>
+    <div class="bg_fff p10 b-tb-ed mt10">
+        <div class="font-33" id="hmType"></div>
+        <div class="font-99-s">
+            入住：<span class="pr10" id="startDate"></span>
+            离店：<span class="pr10" id="endDate"></span>
+            <span id="totalDays"></span>晚
+        </div>
+        <div class="font-99-s" id="ssType"></div>
+    </div>
+    <form id="submitForm" class="wp100">
+        <div class="bg_fff mt10">
+            <div class="submit-item">
+                房间数
+                <div class="submit-item-cont">
+                    <div class="p_r hp100">
+                        <!-- <input type="number" class="order-input font-33" placeholder="请输入房间数" value="1" id="quantity" name="quantity"> -->
+                        <div class="hotel-over-select-text inline_block"></div>
+                        <select class="over-select" id="quantity" name="quantity"></select>
+                        <img src="../../images/xyjt.png?__inline" class="more r0_i">
+                    </div>
+                </div>
+            </div>
+            <div class="submit-item">
+                入住人
+                <div class="submit-item-cont pr40_i">
+                    <div class="p_r">
+                        <input type="text" class="order-input font-33" placeholder="请输入入住人姓名" id="checkInName" name="checkInName">
+                    </div>
+                </div>
+            </div>
+            <div class="submit-item">
+                手机号
+                <div class="submit-item-cont pr40_i">
+                    <div class="p_r">
+                        <input type="tel" class="order-input font-33" placeholder="用于接收通知" id="checkInMobile" name="checkInMobile">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="areaWrap" class="bg_fff plr10 mt10 pb10 b-tb-ed">
+            <div class="submit-textarea-wrap">
+                <div class="p_r wp100">
+                    <textarea class="submit-textarea" name="applyNote" id="applyNote" placeholder="有什么特殊要求，写在这里！"></textarea>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="hp50"></div>
+    <div class="fix-b2 font-9e">
+        合计：<span class="normal_ffa800">¥</span><span class="big_ffa800" id="price"></span>
+        <input type="button" id="submitBtn" value="提交订单" class="small-btn-ffa800" />
+    </div>
+    <link rel="import" href="../footer.html?__inline">
+    <script src="//api.map.baidu.com/api?v=2.0&ak=GtNrG008U04GONzKSDHiW70GxurUUhlU&s=1"></script>
+    <script data-loader>
+        require(['app/controller/go/SubmitOrder']);
+    </script>
+</body>
+
+</html>
